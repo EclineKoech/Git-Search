@@ -1,0 +1,6 @@
+<div class="container">
+   <form #form="ngForm" (ngSubmit)="onSubmit(form.value)" class="form">
+     <input class="form-control me-2 bg-black text-white p-2" type="text" placeholder="Enter github username" ngModel name="search">
+     <button class="btn btn-outline-success "  type="submit">Search</button>
+   </form>
+</div>
