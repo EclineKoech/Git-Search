@@ -1,0 +1,49 @@
+<!-- <app-navbar></app-navbar> -->
+<div class="container">
+  <div class="p-4">
+     <app-search-form (search)=submit($event)></app-search-form>
+  </div>
+</div>
+<ng-progress></ng-progress>
+<div class="container">
+  <div class="row gx-5">
+    <div class="col-lg-12">
+     <div class="p-3">
+       <div class="row p-4">
+        <div class="col-lg-12">
+        <div *ngIf="user.login" class="p-3">
+          <img src="{{user.avatar_url}}" class="p-3" alt="profile-image"> <br> 
+          {{user.name}} <br> <small>{{user.login}}</small>
+          <br> Followers <strong>{{user.followers}}</strong>  | Following <strong>{{user.following}}</strong> 
+       </div>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+<div class="container"></div>
+<div class="row gx-5">
+   <div class="col-lg-12">
+    <div class="p-3">      
+       <div class="row p-4">
+         <div class="col-md-6" *ngFor='let repo of repoName'>
+            <br>
+           <div class="card ">
+            <br>
+            <div class="card-body text-dark"> <br>
+              <h2 class="card-title">{{repo.name}}</h2>
+              <h4>{{repo.description}}</h4>
+              <h5 class="card-subtitle mb-2 text-muted"> Created on {{repo.created_at|date}}</h5>
+              <p class="card-text">{{repo.repos_url}}</p>
+              <a [href]="repo.repos_link"  target="_blank" class="card-link"> {{repo.html_url}}View on github</a>
+           </div>
+        </div>
+     </div>
+     </div>
+  </div>
+</div>
+</div>
+
+  
+    
