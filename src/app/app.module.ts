@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { DateCountPipe } from './date-count.pipe';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     NgProgressModule.forRoot(),
     NgProgressHttpClientModule,
   ],

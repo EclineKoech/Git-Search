@@ -1,10 +1,8 @@
-// import { GithubRequestService } from './../github-http/github-request.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { GithubRequestService } from '../git-service/git.service';
 import { User } from '../user';
-// import { GitService} from GitService
-// import { ReposService } from '../repos.service';
+import { GitRequestService } from '../git-http/git-request.service';
+
 
 @Component({
   selector: 'app-home',
@@ -18,7 +16,7 @@ export class HomeComponent implements OnInit {
   repoName: any[] = [];
 
   constructor(
-    private gitHttpService: GithubRequestService,
+    private gitHttpService: GitRequestService,
     private router: Router,
     // private reposService: ReposService
   ) {}
