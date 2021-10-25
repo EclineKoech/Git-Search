@@ -2,26 +2,32 @@
 
 html, body {
    height: 100%; 
-   background-color: rgb(18,129,247);
+   background-color: rgb(3, 1, 1);
    color: white;
  
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:20%;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 button{
-   width: 50%;
+   width: 25%;
+   margin-top: 10px;
    margin-left: 20%;
    margin-right: auto;
+   float: right;
 }
 .card-title{
    font-size: 900;
    font-weight: bolder;
 }
-.navbar-brand{
-   width: 100%; 
-   color: #1281F7;  
-}
+
 .form{
-   width: 50%;
+   width: 30%;
    margin-left: auto;
    margin-right: auto;
 }
